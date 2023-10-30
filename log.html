@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="log_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>FITNESS HUB - Login</title>
+</head>
+
+<body>
+    <header id="top">
+        <h1>
+            <span class="yellow-text">La mente</span>
+            <span class="white-text">es el límite.</span>
+        </h1>
+        <h5 class="white-text">-Arnold Schwarzenegger.</h5>
+    </header>
+    
+    <main>
+        <div class="fondo">
+        </div>
+        <div class="black">
+            <div class="con-welcome">
+                <h2 class="white-text" id="welcome">Iniciar Sesión</h2>
+                <p class="white-text" id="sub">Entrena y vive la experiencia de llevar tu cuerpo y mente al limite de tus metas.</p>
+            </div>
+            <form class="registration-form">
+                <div class="form-group">
+                    <h2 class="white-text" for="email">• Email</h2>
+                    <input type="email" id="email" name="email" placeholder="fitnesshub@ejemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <h2 class="white-text" for="password">• Contraseña</h2>
+                    <input type="password" id="password" name="password" placeholder="•••••••••••" required>
+                    <p id="errorText"></p>
+                </div>
+            </form>
+        <div class="buttons-container">
+            <button class="yellow-button" type="submit" id="iniciar">Iniciar</button>
+            <button class="black-button" type="submit" id="registro">Registrarse</button>
+        </div>
+        </div>
+        
+    </main>
+    <script src="codes/log_code.js"></script>
+</body>

@@ -1,0 +1,250 @@
+/* Header del home*/
+#top {
+    text-align: center;
+    padding: 20px 0;
+    background-color: black; 
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 2.5rem; 
+    color: #fff; 
+    margin: 0;
+}
+
+h5 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+/* Main del home y reg*/
+
+.fondo {
+    background-image: url('assets/images/black/12.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center -20px; /* Centra la imagen horizontal y verticalmente */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-color: black;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.fondoreg {
+    background-image: url('assets/images/black/4.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center -20px; /* Centra la imagen horizontal y verticalmente */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-color: black;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Bienvenido */
+.con-welcome{
+    font-family: 'Open Sans', sans-serif; 
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 50px;
+    background: linear-gradient(to top, black 50%, transparent);
+}
+
+#welcome{
+    font-size: 40px; 
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+#sub{
+    font-size: 10px;
+    font-weight: normal;
+    margin: 5px 0;
+    line-height: 1.5;
+    padding-right: 40%;
+}
+
+.yellow-text {
+    color: #ffcc00; 
+}
+
+.white-text {
+    color:white; 
+}
+
+/* Botones */
+
+.buttons-container {
+    text-align: center; 
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+/* Estilo del botón amarillo "Iniciar" */
+.yellow-button {
+    background-color: #ffcc00;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+    padding: 10px 30%; /* Aumenta el relleno para igualar el tamaño */
+    font-size: 20px;
+    margin: 10px auto; /* Centra horizontalmente y agrega espacio vertical */
+    display: block;
+    max-width: 100%;
+}
+
+/* Estilo del botón negro "Registrarse" */
+.black-button {
+    background-color: #000;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 30%; /* Aumenta el relleno para igualar el tamaño */
+    font-size: 20px;
+    margin: 10px auto; /* Centra horizontalmente y agrega espacio vertical */
+    display: block;
+    max-width: 100%;
+}
+
+
+/* Fondo degradado Negro */ 
+
+.black{
+    margin-top: -100px;
+}
+
+/* Formularios */
+.registration-form{
+    padding-top: 2em;
+    padding-left: 30px;
+}
+
+.form-group{
+    margin-bottom: 2.5%;
+    position: relative;
+    padding-right: 10%;
+}
+.form-group h2{
+    font-family: 'Open Sans', sans-serif; 
+    margin-bottom: 0.25em;
+    font-weight:  bold;
+    color: #cacaca;
+    font-size: 1rem;
+}
+
+.form-group input{
+    border: none;
+    border-bottom: 1px solid #fff; 
+    background: transparent; 
+    color: #fff; 
+    padding: 10px 0; 
+    margin-bottom: 1.5em;
+    margin: 10px 0;
+}
+
+.form-group input:focus {
+    outline: none; /* Elimina el contorno predeterminado */
+    border-bottom: 3px solid #fff; /* Línea inferior blanca más gruesa cuando enfocado */
+}
+
+/* Estilo del menú desplegable "Objetivo" */
+.form-group select {
+    border: transparent; /* Elimina el borde predeterminado del menú desplegable */
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent; 
+    color: #fff; 
+    padding: 5px; 
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    width: 100%; 
+}
+
+.form-group select:focus{
+    outline: none;
+    border-bottom: 3px solid #fff;
+    background-color: rgba(0, 0, 0);
+}
+
+
+/* Estilo del enlace "Olvidé mi contraseña" */
+.form-group h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px; 
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none; 
+    text-align: end;
+    margin-bottom: 2em;
+}
+
+/* Estilo Error Text */
+#errorText{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px; 
+    color: red;
+    text-decoration: none; 
+    text-align: left;
+    margin-bottom: 2em;
+    padding-left: 2em;
+}
+
+#terms{
+    font-family: 'Open Sans', sans-serif; 
+    margin-bottom: 10%;
+    font-size: 14px;
+}
+
+.form-group input {
+    padding-right: 50%;
+}
+
+
+body{
+    background-color: black;
+    margin: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 0.8rem;
+    }
+
+    .fondo, .fondoreg {
+        background-position: center top;
+    }
+
+    #welcome {
+        font-size: 2rem;
+    }
+
+    #sub {
+        font-size: 0.8rem;
+    }
+
+    .yellow-button, .black-button {
+        font-size: 1.2rem;
+    }
+
+    .form-group h2 {
+        font-size: 0.8rem;
+    }
+
+    .form-group input {
+        font-size: 0.8rem;
+    }
+
+    .form-group h3 {
+        font-size: 0.7rem;
+    }
+}

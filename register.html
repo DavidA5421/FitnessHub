@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="log_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>FITNESS HUB - Register</title>
+</head>
+
+<body>
+    <header id="top">
+        <h1>
+            <span class="yellow-text">Fitness</span>
+            <span class="white-text">Hub</span>
+        </h1>
+        <h5 class="white-text">"La mente es el límite.".</h5>
+    </header>
+    
+    <main>
+        <div class="fondoreg">
+        </div>
+        <div class="black">
+            <div class="con-welcome">
+                <h2 class="white-text" id="welcome">Registro</h2>
+                <p class="white-text" id="sub">Entrena y vive la experiencia de llevar tu cuerpo y mente al límite de tus metas.</p>
+            </div>
+            <form class="registration-form">
+                <div class="form-group">
+                    <h2 class="white-text" for="nombre">• Nombre</h2>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="form-group">
+                    <h2 class="white-text" for="email">• Email</h2>
+                    <input type="email" id="email" name="email" placeholder="fitnesshub@ejemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <h2 class="white-text" for="password">• Contraseña</h2>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                </div>
+                <div class="form-group">
+                    <h2 class="white-text" for="peso">• Peso</h2>
+                    <input type="number" id="peso" name="peso" placeholder="Peso (kg)" required>
+                </div>
+                <div class="form-group">
+                    <h2 class="white-text" for="edad">• Edad</h2>
+                    <input type="number" id="edad" name="edad" placeholder="Edad" required>
+                </div>
+                <div class="form-group">
+                    <h2 class="white-text" for="altura">• Altura</h2>
+                    <input type="number" id="altura" name="altura" placeholder="Altura (cm)" required>
+                </div>
+                <div class="form-group">
+                    <h2 class="white-text" for="objetivo">• Objetivo</h2>
+                    <select id="objetivo" name="objetivo">
+                        <option value="aumentar_masa">Aumentar Masa Muscular</option>
+                        <option value="reducir_peso">Reducir Peso</option>
+                        <option value="mantener_peso">Mantener Peso</option>
+                    </select>
+                </div>
+                <p class="white-text" id="terms">Al registrarte aceptas los términos y condiciones de Fitness Hub.</p>
+            </form>
+            <div class="buttons-container">
+                <button class="yellow-button" type="submit" id="registrar">Registrarse</button>
+                <button class="black-button" id="cancelar">Cancelar</button>
+            </div> 
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+    <script src="codes/register_code.js"></script>
+</body>

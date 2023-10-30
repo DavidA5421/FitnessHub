@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="hub_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ec4399b591.js" crossorigin="anonymous"></script>
+    <title>FITNESS HUB - Start</title>
+</head>
+
+<body>  
+    <header id="top">
+        <h1>
+            <span class="yellow-text">Fitness</span>
+            <span class="white-text">Hub</span>
+        </h1>
+        <h5 class="white-text">"La mente es el límite.".</h5>
+    </header>
+    <main>
+        <div class="fondo">
+            <h4>
+                <span class="yellow-text"> Hola,</span>
+                <span class="white-text" id="saludo"></span>
+            </h4>
+            <div class="gradient"></div>
+
+        </div>
+        <h2 class="con-welcome">
+            <span class="yellow-text">Encuentra</span>
+            <span class="white-text">tu Rutina</span>
+        </h2>
+        
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Buscar entrenamiento">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div class="seccion-textos">
+            <div class="texto" id="tren-superior">Tren Superior</div>
+            <div class="texto" id="tren-inferior">Tren Inferior</div>
+            <div class="texto" id="full-body">Full Body</div>
+            <div class="texto" id="para-ti">Para Ti</div>
+        </div>
+        
+        <div class="descripcion">
+            <h2 id="descripcion-texto">Tren Superior...</h2>
+            <div class="slider-container">
+                <div class="imagen-slider">
+                    <div class="slide">
+                        <img class="imagen" src="assets/images/black/24.jpg" alt="rutina_pechoGym">
+                        <p id="imagen-texto1" class="imagen-texto">Rutina de Pecho,Hombro y Tríceps (Gym)</p>
+                    </div>
+                    <div class="slide">
+                        <img class="imagen" src="assets/images/black/7.jpg" alt="rutina_espaldaGym">
+                        <p id="imagen-texto2" class="imagen-texto">Rutina de Espalda y Bíceps (Gym)</p>
+                    </div>
+                    <div class="slide">
+                        <img class="imagen" src="assets/images/black/26.jpg" alt="rutina_pechoCal">
+                        <p id="imagen-texto3" class="imagen-texto">Rutina de Pecho,Hombro y Tríceps (Calistenia)</p>
+                    </div>
+                    <div class="slide">
+                        <img class="imagen" src="assets/images/black/25.jpg" alt="rutina_espaldaCal">
+                        <p id="imagen-texto4" class="imagen-texto">Rutina de Espalda y Bíceps (Calistenia)</p>
+                    </div>
+                    <div class="slide">
+                        <img class="imagen" src="assets/images/black/27.jpg" alt="rutina_pechoCasa">
+                        <p id="imagen-texto5" class="imagen-texto">Rutina de Pecho,Hombro y Tríceps (En Casa)</p>
+                    </div>
+                    <div class="slide">
+                        <img class="imagen" src="assets/images/black/19.jpg" alt="rutina_espaldaCasa">
+                        <p id="imagen-texto6" class="imagen-texto">Rutina de Espalda y Bíceps (En Casa)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="rutinaModal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar" id="cerrarModal">&times;</span>
+                <h2 class="white-text" id="tituloModal">Título de la Rutina</h2>
+                <p class="white-text" id="informacionModal">Descripción de la rutina</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="buttons-container">
+            <button class="yellow-button" id="tienda">Visita nuestra tienda Online</button>
+        </div>
+    </footer>
+
+<script src="codes/hub_code.js"></script>
+</body>
+</html>

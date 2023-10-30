@@ -1,0 +1,138 @@
+/* Header del home*/
+#top {
+    text-align: center;
+    padding: 20px 0;
+    background-color: black; 
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 40px; 
+    color: #fff; 
+
+}
+
+h5 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/* Main del home*/
+
+.fondo {
+    background-image: url('assets/images/black/9.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center -20px; /* Centra la imagen horizontal y verticalmente */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-color: black;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column; 
+}
+
+/* Bienvenido */
+.con-welcome{
+    font-family: 'Open Sans', sans-serif; 
+    text-align: left;
+    padding-top: 250px;
+    padding-right: 40%;
+    padding-left: 5%;
+}
+#welcome{
+    font-size: 40px; 
+    font-weight: bolder;
+}
+
+#sub{
+    font-size: 10px;
+    font-weight: normal;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+/* Botones */
+
+.buttons-container {
+    text-align: center; 
+    margin-top: 30px; 
+    margin-bottom: 20px;
+}
+
+/* Estilo del botón amarillo "Iniciar" */
+.yellow-button {
+    background-color: #ffcc00;
+    font-family: 'Bebas Neue', sans-serif;  
+    color: #fff; 
+    border: 2px solid #ffcc00; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 30px; 
+    margin-right: 10px; 
+    margin-bottom: 40px;
+}
+
+/* Estilo del botón negro "Registrarse" */
+.black-button {
+    background-color: #000; /* Color de fondo negro */
+    font-family: 'Bebas Neue', sans-serif; 
+    color: #fff; 
+    border: 2px solid #fff; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 30px; 
+}
+
+
+.yellow-text {
+    color: #ffcc00; 
+}
+
+.white-text {
+    color:white; 
+}
+
+/* footer */
+
+footer {
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 5rem; 
+    color: #fff; 
+    text-align: center;
+    padding: 50px 0;
+    background-color: black; 
+}
+
+body{
+    background-color: black;
+    margin: 0;
+}
+
+/* Responsividad */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 0.8rem;
+    }
+
+    .fondo {
+        background-position: center top;
+    }
+
+    #welcome {
+        font-size: 2rem;
+    }
+
+    #sub {
+        font-size: 0.8rem;
+    }
+
+    .yellow-button, .black-button {
+        font-size: 2rem;
+    }
+}
