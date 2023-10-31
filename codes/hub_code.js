@@ -75,6 +75,215 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         ];
         
+        // Array Dietas Secciones //
+
+        const dietasSecciones = [
+            {
+                titulo: "Aumentar Masa...",
+                imagenes: [
+                    { src: "assets/images/white/5.jpg", alt: "aumento_prot", txt: "Dieta Aumento de Masa Muscular (Alta en Proteínas)", id: "imagenD-texto1"},
+                    { src: "assets/images/white/1.jpg", alt: "aumento_carbo", txt: "Dieta Aumento de Masa Muscular (Orientada a Carbohidratos)", id: "imagenD-texto2"},
+                    { src: "assets/images/white/2.jpg", alt: "aumento_veg", txt: "Dieta Aumento de Masa Muscular (Vegetariana)", id: "imagenD-texto3"},
+                ],
+            },
+            {
+                titulo: "Reducir Peso...",
+                imagenes: [
+                    { src: "assets/images/white/6.jpg", alt: "reducir_cal", txt: "Dieta para Reducción de Peso (Baja en Calorías)", id: "imagenD-texto1"},
+                    { src: "assets/images/white/7.jpg", alt: "reducir_por", txt: "Dieta para Reducción de Peso (Control de Porciones)", id: "imagenD-texto2"},
+                    { src: "assets/images/white/12.jpg", alt: "reducir_carbo", txt: "Dieta para Reducción de Peso (Baja en Carbohidratos)", id: "imagenD-texto3"},
+                ],
+            },
+            {
+                titulo: "Mantener Peso...",
+                imagenes: [
+                    { src: "assets/images/white/8.jpg", alt: "mantener_eq", txt: "Dieta para Mantener el Peso (Equilibrada)", id: "imagenD-texto1"},
+                    { src: "assets/images/white/3.jpg", alt: "mantener_veg", txt: "Dieta para Mantener el Peso (Vegetariana)", id: "imagenD-texto2"},
+                    { src: "assets/images/white/4.jpg", alt: "mantener_med", txt: "Dieta para Mantener el Peso (Estilo Mediterráneo)", id: "imagenD-texto3"},
+                ],
+            },
+        ];
+        
+        // Array Dietas //
+
+        const dietas = {
+            // Aumentar Masa //
+            "aumento_prot" :{
+                contenido: [
+                    {
+                        texto:"Alimentación Diaria:",
+                        img:"assets/images/white/9.jpg",
+                        ref:"Desayuno: Batido de proteínas, avena, plátano y almendras. Almuerzo: Pechuga de pollo a la parrilla, arroz integral y brócoli.Merienda: Yogur griego con nueces y miel. Cena: Salmón a la parrilla, quinua y espárragos.",
+                    },
+                    {
+                        texto:"Recomendaciones:",
+                        img:"assets/images/white/1.jpg",
+                        ref:"Una dieta para el aumento de masa muscular (alta en proteínas) es esencial para proporcionar al cuerpo los nutrientes necesarios para el crecimiento y la reparación muscular. Aquí tienes algunas recomendaciones para esta dieta: ",
+                    },
+                    {
+                        texto:"1:",
+                        img:"assets/images/black/21.jpg",
+                        ref:"Proteínas magras: Las proteínas son fundamentales para el desarrollo muscular. Incluye fuentes de proteínas magras como pechuga de pollo, pavo, pescado, carne magra, huevos, yogur griego y legumbres. ",
+                    },
+                    {
+                        texto:"2:",
+                        img:"assets/images/black/9.jpg",
+                        ref:"Carbohidratos complejos: Los carbohidratos proporcionan energía para los entrenamientos y ayudan en la recuperación muscular. Opta por fuentes de carbohidratos complejos como avena, arroz integral, quinua, batatas y pan integral. ",
+                    },
+                    {
+                        texto:"2:",
+                        img:"assets/images/black/12.jpg",
+                        ref:"Grasas saludables: Las grasas saludables son esenciales para el funcionamiento del cuerpo. Incluye aguacates, aceite de oliva, frutos secos y semillas en tu dieta. ",
+                    },
+                ]
+            },
+            "aumento_carbo" :{
+                contenido: [
+                    {
+                        texto:"Alimentación Diaria:",
+                        img:"assets/images/white/9.jpg",
+                        ref:"Desayuno: Tostadas integrales con aguacate y huevos. Almuerzo: Pavo, batata y espárragos.Merienda: Batido de proteínas con plátano y mantequilla de cacahuate. Cena: Tofu al curry, arroz integral y espinacas.",
+                    },
+                    {
+                        texto:"Recomendaciones:",
+                        img:"assets/images/white/4.jpg",
+                        ref:"Una dieta para el aumento de masa muscular (Orientada en Carbohidratos) es esencial para proporcionar al cuerpo los nutrientes necesarios para el crecimiento, recuerda que, además de los carbohidratos, la proteína sigue siendo fundamental en una dieta para aumentar la masa muscular. Debes asegurarte de obtener suficiente proteína de fuentes magras para apoyar el crecimiento y la reparación muscular.. Aquí tienes algunas recomendaciones para esta dieta: ",
+                    },
+                    {
+                        texto:"1:",
+                        img:"assets/images/black/6.jpg",
+                        ref:"Incluye carbohidratos complejos de calidad: Prioriza los carbohidratos complejos de alta calidad como la avena, el arroz integral, la quinua, las batatas y las legumbres. Estos alimentos proporcionan una liberación sostenida de energía y son ricos en nutrientes esenciales.",
+                    },
+                    {
+                        texto:"2:",
+                        img:"assets/images/white/7.jpg",
+                        ref:"Aumenta la ingesta de calorías: Para ganar masa muscular, necesitas consumir un exceso de calorías en comparación con las que quemas. Asegúrate de que tu dieta proporcione suficientes calorías para respaldar el crecimiento muscular. Esto puede requerir un aumento en la cantidad de carbohidratos que consumes.",
+                    },
+                    {
+                        texto:"2:",
+                        img:"assets/images/white/11.jpg",
+                        ref:"Planifica tus comidas alrededor del entrenamiento: Consume una cantidad significativa de carbohidratos antes y después de tu entrenamiento. Los carbohidratos previos al ejercicio proporcionarán energía para un rendimiento óptimo, mientras que los carbohidratos posteriores al ejercicio ayudarán en la recuperación muscular y la reposición de glucógeno.",
+                    },
+                ]
+            },
+            "aumento_veg" :{
+                contenido: [
+                    {
+                        texto:"Alimentación Diaria:",
+                        img:"assets/images/white/3.jpg",
+                        ref:"Desayuno: Batido de proteínas de suero de leche con frutas. Almuerzo: Lentejas, arroz integral y verduras al vapor.Merienda: Yogur vegano con nueces y bayas.Cena: Tofu asado, quinua y brócoli.",
+                    },
+                    {
+                        texto:"Recomendaciones:",
+                        img:"assets/images/white/10.jpg",
+                        ref:"Si estás siguiendo una dieta vegetariana y deseas aumentar tu masa muscular, es importante asegurarte de obtener los nutrientes adecuados para el crecimiento y la reparación muscular. Aquí tienes tres consejos para una dieta de aumento de masa muscular vegetariana:",
+                    },
+                    {
+                        texto:"1:",
+                        img:"assets/images/black/12.jpg",
+                        ref:"Maximiza las fuentes de proteína vegetal: Las fuentes de proteína vegetal como las legumbres (lentejas, garbanzos, frijoles), tofu, tempeh, quinua, nueces y semillas son esenciales en una dieta vegetariana para ganar masa muscular. Asegúrate de incluir estas fuentes de proteína en tus comidas diarias para satisfacer tus necesidades proteicas.",
+                    },
+                    {
+                        texto:"2:",
+                        img:"assets/images/black/10.jpg",
+                        ref:"Variedad de alimentos ricos en nutrientes: Consume una variedad de alimentos ricos en nutrientes para asegurarte de obtener una amplia gama de vitaminas y minerales. Las verduras de hojas verdes, frutas, granos enteros y alimentos ricos en hierro, como las espinacas y el tofu, son fundamentales para mantener la salud general y apoyar tus objetivos de ganancia muscular.",
+                    },
+                    {
+                        texto:"2:",
+                        img:"assets/images/black/9.jpg",
+                        ref:"Controla tu ingesta calórica: Para aumentar la masa muscular, debes consumir un exceso de calorías, pero asegúrate de que estas calorías provengan de fuentes saludables. Los alimentos ricos en proteínas y carbohidratos, junto con grasas saludables, deben formar parte de tu dieta. Calcula tus necesidades calóricas diarias y ajusta tu ingesta en consecuencia.",
+                    },
+                ]
+            },
+            "reducir_cal": {
+                contenido: [
+                    {
+                        texto:"Alimentación Diaria:",
+                        img:"assets/images/white/3.jpg",
+                        ref:"Desayuno: Batido de proteínas de suero de leche con frutas. Almuerzo: Lentejas, arroz integral y verduras al vapor.Merienda: Yogur vegano con nueces y bayas.Cena: Tofu asado, quinua y brócoli.",
+                    },
+                    {
+                        texto:"Recomendaciones:",
+                        img:"assets/images/white/10.jpg",
+                        ref:"Si estás siguiendo una dieta vegetariana y deseas aumentar tu masa muscular, es importante asegurarte de obtener los nutrientes adecuados para el crecimiento y la reparación muscular. Aquí tienes tres consejos para una dieta de aumento de masa muscular vegetariana:",
+                    },
+                    {
+                        texto:"1:",
+                        img:"",
+                        ref:"Maximiza las fuentes de proteína vegetal: Las fuentes de proteína vegetal como las legumbres (lentejas, garbanzos, frijoles), tofu, tempeh, quinua, nueces y semillas son esenciales en una dieta vegetariana para ganar masa muscular. Asegúrate de incluir estas fuentes de proteína en tus comidas diarias para satisfacer tus necesidades proteicas.",
+                    },
+                    {
+                        texto:"2:",
+                        img:"",
+                        ref:"Variedad de alimentos ricos en nutrientes: Consume una variedad de alimentos ricos en nutrientes para asegurarte de obtener una amplia gama de vitaminas y minerales. Las verduras de hojas verdes, frutas, granos enteros y alimentos ricos en hierro, como las espinacas y el tofu, son fundamentales para mantener la salud general y apoyar tus objetivos de ganancia muscular.",
+                    },
+                    {
+                        texto:"2:",
+                        img:"",
+                        ref:"Controla tu ingesta calórica: Para aumentar la masa muscular, debes consumir un exceso de calorías, pero asegúrate de que estas calorías provengan de fuentes saludables. Los alimentos ricos en proteínas y carbohidratos, junto con grasas saludables, deben formar parte de tu dieta. Calcula tus necesidades calóricas diarias y ajusta tu ingesta en consecuencia.",
+                    },
+                ]
+            },
+            "reducir_por": {
+                contenido: [
+                    {
+                        texto:"Alimentación Diaria:",
+                        img:"assets/images/white/3.jpg",
+                        ref:"Desayuno: Batido de proteínas de suero de leche con frutas. Almuerzo: Lentejas, arroz integral y verduras al vapor.Merienda: Yogur vegano con nueces y bayas.Cena: Tofu asado, quinua y brócoli.",
+                    },
+                    {
+                        texto:"Recomendaciones:",
+                        img:"assets/images/white/10.jpg",
+                        ref:"Si estás siguiendo una dieta vegetariana y deseas aumentar tu masa muscular, es importante asegurarte de obtener los nutrientes adecuados para el crecimiento y la reparación muscular. Aquí tienes tres consejos para una dieta de aumento de masa muscular vegetariana:",
+                    },
+                    {
+                        texto:"1:",
+                        img:"",
+                        ref:"Maximiza las fuentes de proteína vegetal: Las fuentes de proteína vegetal como las legumbres (lentejas, garbanzos, frijoles), tofu, tempeh, quinua, nueces y semillas son esenciales en una dieta vegetariana para ganar masa muscular. Asegúrate de incluir estas fuentes de proteína en tus comidas diarias para satisfacer tus necesidades proteicas.",
+                    },
+                    {
+                        texto:"2:",
+                        img:"",
+                        ref:"Variedad de alimentos ricos en nutrientes: Consume una variedad de alimentos ricos en nutrientes para asegurarte de obtener una amplia gama de vitaminas y minerales. Las verduras de hojas verdes, frutas, granos enteros y alimentos ricos en hierro, como las espinacas y el tofu, son fundamentales para mantener la salud general y apoyar tus objetivos de ganancia muscular.",
+                    },
+                    {
+                        texto:"2:",
+                        img:"",
+                        ref:"Controla tu ingesta calórica: Para aumentar la masa muscular, debes consumir un exceso de calorías, pero asegúrate de que estas calorías provengan de fuentes saludables. Los alimentos ricos en proteínas y carbohidratos, junto con grasas saludables, deben formar parte de tu dieta. Calcula tus necesidades calóricas diarias y ajusta tu ingesta en consecuencia.",
+                    },
+                ]
+            },
+            "reducir_carbo" :{
+                contenido: [
+                    {
+                        texto:"Alimentación Diaria:",
+                        img:"assets/images/white/3.jpg",
+                        ref:"Desayuno: Batido de proteínas de suero de leche con frutas. Almuerzo: Lentejas, arroz integral y verduras al vapor.Merienda: Yogur vegano con nueces y bayas.Cena: Tofu asado, quinua y brócoli.",
+                    },
+                    {
+                        texto:"Recomendaciones:",
+                        img:"assets/images/white/10.jpg",
+                        ref:"Si estás siguiendo una dieta vegetariana y deseas aumentar tu masa muscular, es importante asegurarte de obtener los nutrientes adecuados para el crecimiento y la reparación muscular. Aquí tienes tres consejos para una dieta de aumento de masa muscular vegetariana:",
+                    },
+                    {
+                        texto:"1:",
+                        img:"",
+                        ref:"Maximiza las fuentes de proteína vegetal: Las fuentes de proteína vegetal como las legumbres (lentejas, garbanzos, frijoles), tofu, tempeh, quinua, nueces y semillas son esenciales en una dieta vegetariana para ganar masa muscular. Asegúrate de incluir estas fuentes de proteína en tus comidas diarias para satisfacer tus necesidades proteicas.",
+                    },
+                    {
+                        texto:"2:",
+                        img:"",
+                        ref:"Variedad de alimentos ricos en nutrientes: Consume una variedad de alimentos ricos en nutrientes para asegurarte de obtener una amplia gama de vitaminas y minerales. Las verduras de hojas verdes, frutas, granos enteros y alimentos ricos en hierro, como las espinacas y el tofu, son fundamentales para mantener la salud general y apoyar tus objetivos de ganancia muscular.",
+                    },
+                    {
+                        texto:"2:",
+                        img:"",
+                        ref:"Controla tu ingesta calórica: Para aumentar la masa muscular, debes consumir un exceso de calorías, pero asegúrate de que estas calorías provengan de fuentes saludables. Los alimentos ricos en proteínas y carbohidratos, junto con grasas saludables, deben formar parte de tu dieta. Calcula tus necesidades calóricas diarias y ajusta tu ingesta en consecuencia.",
+                    },
+                ]
+            },
+        };
+
         // Array Rutinas //
 
         const rutinas = {
@@ -685,6 +894,29 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    function agregarEventosDietasClickImagenes() {
+        console.log("Agregando eventos a imágenes de dietas...");
+        const imagenes = document.querySelectorAll(".imagenD");
+        imagenes.forEach((imagen, indiceImagen) => {
+            imagen.addEventListener("click", function () {
+                // Obtener el índice de la sección actual
+                const seccionActual = document.getElementById("descripcion-textoD").textContent;
+                let indiceSeccion = -1;
+    
+                for (let i = 0; i < dietasSecciones.length; i++) {
+                    if (dietasSecciones[i].titulo === seccionActual) {
+                        indiceSeccion = i;
+                        break;
+                    }
+                }
+    
+                if (indiceSeccion !== -1) {
+                    mostrarDieta(indiceSeccion, indiceImagen);
+                }
+            });
+        });
+    }
+
     function mostrarSlider(indiceSeccion) {
         const seccionActual = secciones[indiceSeccion];
         const descripcionTexto = document.getElementById("descripcion-texto");
@@ -710,7 +942,33 @@ document.addEventListener("DOMContentLoaded", function () {
         agregarEventosClickImagenes();
     }
 
-    // Mostrar modal por Rutina
+    function mostrarSlider2(indiceSeccion) {
+        const seccionActual = dietasSecciones[indiceSeccion];
+        const descripcionTexto = document.getElementById("descripcion-textoD");
+        const slider = document.querySelector(".imagen-sliderD");
+        const imagenTexto = document.getElementById("imagenD-texto1");
+
+        // Actualiza el título y el texto
+        descripcionTexto.textContent = seccionActual.titulo;
+        imagenTexto.textContent = seccionActual.imagenes[0].alt;
+
+        // Limpia el contenido del slider
+        slider.innerHTML = "";
+
+        // Crea y agrega las imágenes
+            seccionActual.imagenes.forEach((imagen, index) => {
+                const slide = document.createElement("div");
+                slide.className = "slide";
+                slide.innerHTML = `<img class="imagenD" src="${imagen.src}" alt="${imagen.alt}">
+                <p id="${imagen.id}" class="imagen-texto">${imagen.txt}</p>`;
+                slider.appendChild(slide);
+            });
+
+        agregarEventosDietasClickImagenes();
+    }
+
+    // Mostrar modal por Rutina y Dietas
+
     function mostrarRutina(indiceSeccion, indiceImagen) {
         const seccionActual = secciones[indiceSeccion];
         const imagenActual = seccionActual.imagenes[indiceImagen];
@@ -739,6 +997,36 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.style.display = "block";
     }
 
+    function mostrarDieta(indiceSeccion, indiceImagen) {
+        console.log("Mostrando dieta...");
+        const seccionActual = dietasSecciones[indiceSeccion];
+        const imagenActual = seccionActual.imagenes[indiceImagen];
+    
+        const dieta = dietas[imagenActual.alt];
+    
+        // Actualizar el contenido del modal
+        const tituloDModal = document.getElementById("tituloDModal");
+        const informacionDModal = document.getElementById("informacionDModal");
+    
+        if (dieta) {
+            // Construir contenido dinámico
+            let contenidoHTML = "";
+            dieta.contenido.forEach((contenido, index) => {
+                contenidoHTML += `<p class="modalInfo">${contenido.texto}</p>
+                                <img width="560" height="315" src="${contenido.img}" id="imgdieta"></img>
+                                <p class="modalInfo" id="ref">${contenido.ref}</p>`;
+            });
+    
+            tituloDModal.textContent = imagenActual.txt;
+            informacionDModal.innerHTML = contenidoHTML;
+        }
+    
+        // Mostrar el modal
+        const modal = document.getElementById("dietaModal");
+        modal.style.display = "block";
+    }
+
+    
     //-------------------Elementos de la pagina
 
     const tiendaButton = document.getElementById("tienda");
@@ -751,19 +1039,36 @@ document.addEventListener("DOMContentLoaded", function () {
     const fullBodyElement = document.getElementById("full-body");
     const paraTiElement = document.getElementById("para-ti");
 
+
+    const aumentarElement = document.getElementById("aumentar");
+    const reducirElement = document.getElementById("reducir");
+    const mantenerElement = document.getElementById("mantener");
+
+
     trenSuperiorElement.addEventListener("click", () => mostrarSlider(0));
     trenInferiorElement.addEventListener("click", () => mostrarSlider(1));
     fullBodyElement.addEventListener("click", () => mostrarSlider(2));
     paraTiElement.addEventListener("click", () => verificarParaTi(objetivo));
 
 
+    aumentarElement.addEventListener("click", () => mostrarSlider2(0));
+    reducirElement.addEventListener("click", () => mostrarSlider2(1));
+    mantenerElement.addEventListener("click", () => mostrarSlider2(2));
+
+
     // Mostrar Rutinas
     const modal = document.getElementById("rutinaModal");
     const cerrarModal = document.getElementById("cerrarModal");
+    const modalD = document.getElementById("dietaModal");
+    const cerrarModalD = document.getElementById("cerrarDModal");
 
     // Agregar un evento de clic para cerrar el modal
     cerrarModal.addEventListener("click", function () {
         modal.style.display = "none";
+    });
+    // Agregar un evento de clic para cerrar el modal Dieta
+    cerrarDModal.addEventListener("click", function () {
+        modalD.style.display = "none";
     });
 
     //Salida a Tienda
@@ -772,5 +1077,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     
     agregarEventosClickImagenes();
+    agregarEventosDietasClickImagenes()
 
 });
