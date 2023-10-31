@@ -54,7 +54,7 @@ function slider(n) {
 
 function next() {
     activeImg++
-    if (activeImg > 2) {
+    if (activeImg > 8) {
         activeImg = 0
     }
     slider(activeImg)
