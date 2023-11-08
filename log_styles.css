@@ -1,13 +1,13 @@
 /* Header del home*/
 #top {
     text-align: center;
-    padding: 20px 0;
-    background-color: black; 
+    padding: 80px 0 20px 0;
+    background: linear-gradient(to bottom, #2a3441 -80px, transparent);
 }
 
 h1 {
     font-family: 'Bebas Neue', sans-serif; 
-    font-size: 2.5rem; 
+    font-size: 3rem; 
     color: #fff; 
     margin: 0;
 }
@@ -17,6 +17,19 @@ h5 {
     font-size: 1rem;
     font-weight: normal;
     margin: 5px 0;
+}
+
+#top h2 {
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 4.2rem; 
+    color: #fff; 
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+#slogan{
+    padding-bottom: 2rem;
 }
 
 /* Main del home y reg*/
@@ -37,9 +50,7 @@ h5 {
 .fondoreg {
     background-image: url('assets/images/black/4.jpg');
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
-    background-position: center -20px; /* Centra la imagen horizontal y verticalmente */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    background-color: black;
     min-height: 50vh;
     display: flex;
     flex-direction: column; 
@@ -87,27 +98,37 @@ h5 {
 /* Estilo del botón amarillo "Iniciar" */
 .yellow-button {
     background-color: #ffcc00;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: bolder;
     color: #fff;
     border: 2px solid #ffcc00;
     border-radius: 5px;
-    padding: 10px 30%; /* Aumenta el relleno para igualar el tamaño */
+    padding: 10px 22%; /* Aumenta el relleno para igualar el tamaño */
     font-size: 20px;
     margin: 10px auto; /* Centra horizontalmente y agrega espacio vertical */
     display: block;
     max-width: 100%;
 }
 
+#iniciar{
+    padding: 10px 30%; 
+}
+
+#registro   {
+    padding: 10px 25%; 
+}
+
 /* Estilo del botón negro "Registrarse" */
 .black-button {
     background-color: #000;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: bolder;
     color: #fff;
     border: 2px solid #fff;
     border-radius: 5px;
-    padding: 10px 30%; /* Aumenta el relleno para igualar el tamaño */
+    padding: 10px 25%; 
     font-size: 20px;
-    margin: 10px auto; /* Centra horizontalmente y agrega espacio vertical */
+    margin: 10px auto; 
     display: block;
     max-width: 100%;
 }
@@ -125,12 +146,17 @@ h5 {
     padding-left: 30px;
 }
 
-.form-group{
+.fa-lock, .fa-envelope {
+    color: white;
+    position: absolute;
+    right: 3rem;
+}
+.form-group2{
     margin-bottom: 2.5%;
     position: relative;
     padding-right: 10%;
 }
-.form-group h2{
+.form-group2 h2{
     font-family: 'Open Sans', sans-serif; 
     margin-bottom: 0.25em;
     font-weight:  bold;
@@ -138,23 +164,23 @@ h5 {
     font-size: 1rem;
 }
 
-.form-group input{
+.form-group2 input{
     border: none;
     border-bottom: 1px solid #fff; 
     background: transparent; 
     color: #fff; 
     padding: 10px 0; 
     margin-bottom: 1.5em;
-    margin: 10px 0;
+    padding-right: 50%;
 }
 
-.form-group input:focus {
+.form-group2 input:focus {
     outline: none; /* Elimina el contorno predeterminado */
     border-bottom: 3px solid #fff; /* Línea inferior blanca más gruesa cuando enfocado */
 }
 
 /* Estilo del menú desplegable "Objetivo" */
-.form-group select {
+.form-group2 select {
     border: transparent; /* Elimina el borde predeterminado del menú desplegable */
     border-bottom: 1px solid #fff;
     outline: none;
@@ -166,15 +192,16 @@ h5 {
     width: 100%; 
 }
 
-.form-group select:focus{
+.form-group2 select:focus{
     outline: none;
     border-bottom: 3px solid #fff;
     background-color: rgba(0, 0, 0);
+    font-style: inherit;
 }
 
 
 /* Estilo del enlace "Olvidé mi contraseña" */
-.form-group h3{
+.form-group2 h3{
     font-family: 'Open Sans', sans-serif;
     font-size: 15px; 
     color: rgba(255, 255, 255, 0.7);
@@ -200,10 +227,6 @@ h5 {
     font-size: 14px;
 }
 
-.form-group input {
-    padding-right: 50%;
-}
-
 
 body{
     background-color: black;
@@ -213,11 +236,11 @@ body{
 /* Responsividad */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     h5 {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .fondo, .fondoreg {
@@ -237,7 +260,7 @@ body{
     }
 
     .form-group h2 {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .form-group input {

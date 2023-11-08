@@ -5,25 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="home_styles.css">
+    <link rel="stylesheet" type="text/css" href="navbar_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ec4399b591.js" crossorigin="anonymous"></script>
     <title>FITNESS HUB - Home</title>
 </head>
 <body >
+    <header>
+        <nav class="navbar-top">
+            <ul class="navbar-top-ul">
+                <li class="navbar-top-item">
+                    <a href="../register.html" class="navbar-top-links">Registro</a>
+                </li>
+                <li class="navbar-top-item">
+                    <a href="../log.html" class="navbar-top-links">Iniciar sesión</a>
+                </li>
+                <li class="navbar-top-item">
+                    <a href="#" class="navbar-top-links">
+                        <i class="zmdi zmdi-shopping-cart"></i> Carrito
+                        <!-- <i class="zmdi zmdi-chevron-down"></i> -->
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navbar">
+            <header class="nabvar-mobile is-size-5-mobile">
+                <a class="navbar-mobile-link has-text-white" href="#" id="btn-mobile"><i class="fa-solid fa-bars"></i></a>
+                <a class="navbar-mobile-link has-text-white" href="tienda/index.html"></a>
+                <a class="navbar-mobile-link has-text-white" href="tienda/producto.html"><i class="fa-solid fa-cart-shopping"></i>  </a>
+            </header>
+            <nav class="nav-menu" id="mySidenav">
+                <form class="form-group " action="#">
+                    <div class="form-group-container">
+                        <span class="form-group-icon" id=""><i class="fas fa-search"></i></span>
+                        <input type="text" class="form-group-input" placeholder="Buscar...">
+                    </div>
+                </form>
+
+                <ul class="nav-menu-ul">
+                    <li class="nav-menu-item">
+                        <a href="tienda/index.html" class="nav-menu-link link-submenu">Fitness-Shop <i class="zmdi zmdi-chevron-down"></i> </a>
+                        <div class="container-sub-menu"> 
+                            <ul class="sub-menu-ul">
+                                    </a>
+                                    <ul class="sub-menu-ul">
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="tienda/index.html">Suplementos</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="tienda/oversizes.html">Oversizes</a></li>
+                                        <li class="nav-menu-item"><a class="nav-menu-link" href="tienda/producto.html">Comprar</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div> 
+                    </li>
+                    <li class="nav-menu-item"><a href="hub.html" class="nav-menu-link">Fitness-Hub</a></li>
+                    <li class="nav-menu-item"><a href="home.html" class="nav-menu-link" id="women">Inicio</a></li>
+                    <li class="nav-menu-item"><a href="register.html" class="nav-menu-link">Registro</a></li>
+                    <li class="nav-menu-item"><a href="log.html" class="nav-menu-link">Iniciar Sesión</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+</header>
     <header id="top">
-        <h1>
-            <span class="yellow-text">La mente</span>
-            <span class="white-text">es el límite.</span>
-        </h1>
-        <h5 class="white-text">-Arnold Schwarzenegger.</h5>
+        <h2><span class="yellow-text">Fitness</span>
+            <span class="white-text">Hub</span></h2>
+        <div class="logo">
+            <img src="assets/icons/icon.png">
+        </div>    
     </header>
 
     <main class="fondo">
         <div class="con-welcome">
-            <h2 class="white-text" id="welcome">Bienvenido!</h2>
-            <p class="white-text" id="sub">Entrena y vive la experiencia de llevar tu cuerpo y mente al limite de tus metas.</p>
+            <div class="bg black">
+                <h2 class="white-text" id="welcome">Bienvenido!</h2>
+                <p class="white-text" id="sub">Entrena y vive la experiencia de llevar tu cuerpo y mente al limite de tus metas.</p>
+            </div>
         </div>
 
         <div class="buttons-container">
@@ -34,9 +93,13 @@
     </main>
 
     <footer>
-       <h2><span class="yellow-text">Fitness</span>
-        <span class="white-text">Hub</span></h2>
+        <h1>
+            <span class="yellow-text">La mente</span>
+            <span class="white-text">es el límite.</span>
+        </h1>
+        <h5 class="white-text">-Arnold Schwarzenegger.</h5>
     </footer>
     <script src="codes/home_code.js"></script>
+    <script src="codes/nav_code.js"></script>
 </body>
 </html>

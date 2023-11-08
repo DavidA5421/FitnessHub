@@ -1,22 +1,16 @@
 /* Header del home*/
 #top {
+    padding: 80px 0 20px 0;
+    background: linear-gradient(to bottom, #28313a -20px, transparent);
     text-align: center;
-    padding: 20px 0;
-    background-color: black; 
 }
 
-h1 {
+#top h2 {
     font-family: 'Bebas Neue', sans-serif; 
-    font-size: 40px; 
+    font-size: 4.2rem; 
     color: #fff; 
-
-}
-
-h5 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-    margin-top: 5px;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 /* Main del home*/
@@ -40,6 +34,11 @@ h5 {
     padding-right: 40%;
     padding-left: 5%;
 }
+
+.bg{
+    background-color:rgba(0, 0, 0, 0.445);
+}
+
 #welcome{
     font-size: 40px; 
     font-weight: bolder;
@@ -57,7 +56,7 @@ h5 {
 .buttons-container {
     text-align: center; 
     margin-top: 30px; 
-    margin-bottom: 20px;
+    background: linear-gradient(to top, black 2rem, transparent);
 }
 
 /* Estilo del botón amarillo "Iniciar" */
@@ -74,6 +73,7 @@ h5 {
 }
 
 /* Estilo del botón negro "Registrarse" */
+
 .black-button {
     background-color: #000; /* Color de fondo negro */
     font-family: 'Bebas Neue', sans-serif; 
@@ -95,18 +95,36 @@ h5 {
 
 /* footer */
 
-footer {
+footer h1{
     font-family: 'Bebas Neue', sans-serif; 
-    font-size: 5rem; 
+    font-size: 40px; 
     color: #fff; 
     text-align: center;
-    padding: 50px 0;
-    background-color: black; 
 }
 
+footer h5{
+    font-family: 'Bebas Neue', sans-serif; 
+    font-size: 18px;
+    text-align: center;
+    margin: 1rem 1rem 1rem 1rem;
+}
 body{
     background-color: black;
     margin: 0;
+}
+
+/* Logo */
+
+.logo {
+    display: inline-block;
+}
+
+.logo img{
+    height: 60px;
+    width: 60px;    
+    border-radius: 10rem;
+    border: 2px solid #28313a;
+    vertical-align: -0.7rem;
 }
 
 /* Responsividad */

@@ -1,22 +1,38 @@
 /* Header del home*/
 #top {
+    padding: 80px 0 20px 0;
     text-align: center;
-    padding: 20px 0;
-    background-color: black; 
+    background: linear-gradient(to bottom, #2a3441 -80px, transparent);
 }
 
 h1 {
     font-family: 'Bebas Neue', sans-serif; 
-    font-size: 40px; 
+    font-size: 3rem; 
     color: #fff; 
-
+    display: inline-block;
+    margin-left: 20px;
 }
 
 h5 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: normal;
 }
+
+/* Logo */
+
+.logo {
+    display: inline-block;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+    border-radius: 10rem;
+    border: 2px solid #28313a;
+    vertical-align: -0.7rem;
+}
+
 
 /* Main del home y reg, imagenes*/
 
@@ -38,7 +54,7 @@ h5 {
     display: flex;
     flex-direction: column; 
     border-radius: 20px;
-    background: linear-gradient(to bottom, black 10%, transparent);
+    background: linear-gradient(to top, #28313a 10%, transparent);
     text-align: center; 
     border-radius: 20px;
     overflow: hidden;
@@ -67,12 +83,19 @@ h4{
     font-weight: bold;
     padding-left: 4%;
     padding-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 1rem;
     margin-top: -100px;
     background: linear-gradient(to top, black 60%, transparent);
 }
 
+#dh2{
+    padding-top: 8rem;
+}
 
+#fh2{
+    padding-top: 10rem;
+    background: linear-gradient(to top, black -3rem, transparent);
+}
 /* Estilo del contenedor de búsqueda */
 .search-container {
     text-align: center;
@@ -110,7 +133,6 @@ h4{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 20px; /* Espacio entre los textos */
 }
 
 .texto {
@@ -159,7 +181,7 @@ h4{
 
 .slider-container {
     height: 300px;
-    padding: 0 6% 0 6%;
+    padding: 0 1rem 1rem 1rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -179,6 +201,12 @@ h4{
     align-items: center;
 }
 
+.imagen-sliderD img {
+    border-radius: 2rem;
+    max-height: 100%;
+    max-width: 100%; 
+}
+
 .slide {
     text-align: center;
     margin-left: 20px;
@@ -191,8 +219,9 @@ h4{
 }
 
 .imagen-slider img {
+    border-radius: 2rem;
     max-height: 100%;
-    max-width: 100%; /* Ajusta el tamaño de las imágenes al 100% del contenedor */
+    max-width: 100%; 
 }
 
 .imagen-slider p {
@@ -204,7 +233,17 @@ h4{
     width: 4px;
 }
 
+.imagen-sliderD::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+}
+
 .imagen-slider::-webkit-scrollbar-thumb {
+    background: #28313a;
+    border-radius: 10px;
+}
+
+.imagen-sliderD::-webkit-scrollbar-thumb {
     background: #28313a;
     border-radius: 10px;
 }
@@ -213,16 +252,20 @@ h4{
     background: transparent;
 }
 
+.imagen-sliderD::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 .imagen {
-    max-width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    max-width: 100%; 
     transition: transform 0.3s;
-    margin-bottom: 0.66em;
+    margin-bottom: 0.8em;
 }
 
 .imagenD {
-    max-width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    max-width: 100%; 
     transition: transform 0.3s;
-    margin-bottom: 0.66em;
+    margin-bottom: 0.7em;
 }
 
 .imagen-texto{
@@ -347,19 +390,8 @@ body{
         background-position: center;
     }
 
-    .con-welcome {
-        padding-top: 10%;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
-
     .yellow-button, .black-button {
         font-size: 20px;
-    }
-
-    .seccion-textos {
-        flex-direction: row;
-        margin-top: 30px;
     }
 
     .texto {
@@ -368,7 +400,7 @@ body{
     }
 
     .slider-container {
-        padding: 0;
+        padding: 0 1rem 1rem 1rem;
     }
 
     .imagen-slider {
@@ -404,11 +436,6 @@ body{
     .yellow-button, .black-button {
         font-size: 18px;
         padding: 10px 15px;
-    }
-
-    .seccion-textos {
-        flex-direction: row;
-        margin-top: 10px;
     }
 
     .texto {
